@@ -7,25 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>378</width>
-    <height>738</height>
+    <height>400</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
-    <width>378</width>
-    <height>738</height>
+    <width>350</width>
+    <height>350</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>378</width>
-    <height>738</height>
+    <height>458</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -43,61 +43,124 @@
    </property>
    <property name="minimumSize">
     <size>
-     <width>378</width>
-     <height>720</height>
+     <width>350</width>
+     <height>350</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>500</height>
     </size>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <layout class="QHBoxLayout" name="ports">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Порт</string>
-            </property>
-            <property name="textFormat">
-             <enum>Qt::PlainText</enum>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="wordWrap">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox"/>
-          </item>
-         </layout>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>13</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>288</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="connecButton">
-            <property name="text">
-             <string>Подключиться</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+            <kerning>true</kerning>
+           </font>
+          </property>
+          <property name="text">
+           <string>Порт</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>13</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="portsMain">
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/customs/settings-gear.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Подключиться</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -106,15 +169,21 @@
         <item>
          <widget class="QScrollArea" name="scrollArea">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="minimumSize">
            <size>
-            <width>300</width>
-            <height>150</height>
+            <width>320</width>
+            <height>140</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>370</width>
+            <height>200</height>
            </size>
           </property>
           <property name="widgetResizable">
@@ -126,7 +195,7 @@
              <x>0</x>
              <y>0</y>
              <width>354</width>
-             <height>304</height>
+             <height>138</height>
             </rect>
            </property>
            <property name="sizePolicy">
@@ -165,52 +234,6 @@
         </item>
         <item>
          <layout class="QGridLayout" name="Buttons">
-          <item row="1" column="1">
-           <widget class="QPushButton" name="ScanButton">
-            <property name="minimumSize">
-             <size>
-              <width>150</width>
-              <height>150</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-  color: black;                     
-  width: 75px;                     
-  height: 50px;                    
-  font-size: 14px;                 
-  font-weight: bold;                         
-  text-align: center;
-}</string>
-            </property>
-            <property name="text">
-             <string>Сканер</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QPushButton" name="CalibButton">
-            <property name="minimumSize">
-             <size>
-              <width>150</width>
-              <height>150</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-  color: black;                     
-  width: 75px;                     
-  height: 50px;                    
-  font-size: 14px;                 
-  font-weight: bold;                             
-  text-align: center;
-}</string>
-            </property>
-            <property name="text">
-             <string>Калибровка</string>
-            </property>
-           </widget>
-          </item>
           <item row="0" column="0">
            <widget class="QPushButton" name="WeighButton">
             <property name="sizePolicy">
@@ -222,7 +245,7 @@
             <property name="minimumSize">
              <size>
               <width>150</width>
-              <height>150</height>
+              <height>70</height>
              </size>
             </property>
             <property name="baseSize">
@@ -230,6 +253,13 @@
               <width>150</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton{
@@ -253,12 +283,58 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
+          <item row="0" column="1">
+           <widget class="QPushButton" name="CalibButton">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  color: black;                     
+  width: 75px;                     
+  height: 50px;                    
+  font-size: 14px;                 
+  font-weight: bold;                             
+  text-align: center;
+}</string>
+            </property>
+            <property name="text">
+             <string>Калибровка</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="ScanButton">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  color: black;                     
+  width: 75px;                     
+  height: 50px;                    
+  font-size: 14px;                 
+  font-weight: bold;                         
+  text-align: center;
+}</string>
+            </property>
+            <property name="text">
+             <string>Сканер</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
            <widget class="QPushButton" name="SaveButton">
             <property name="minimumSize">
              <size>
               <width>150</width>
-              <height>150</height>
+              <height>70</height>
              </size>
             </property>
             <property name="styleSheet">
@@ -280,20 +356,41 @@
         </item>
        </layout>
       </item>
+      <item>
+       <layout class="QHBoxLayout" name="workStatus">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Статус работы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+       </layout>
+      </item>
      </layout>
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
+  <tabstop>pushButton</tabstop>
   <tabstop>comboBox</tabstop>
-  <tabstop>connecButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
   <tabstop>scrollArea</tabstop>
   <tabstop>WeighButton</tabstop>
   <tabstop>CalibButton</tabstop>
   <tabstop>SaveButton</tabstop>
   <tabstop>ScanButton</tabstop>
+  <tabstop>lineEdit</tabstop>
  </tabstops>
  <resources>
   <include location="file.qrc"/>
