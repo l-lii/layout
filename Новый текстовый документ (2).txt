@@ -1,0 +1,2 @@
+pyuic5 C:\Users\Mega_Mike\Desktop\layout-main\design.ui -o C:\Users\Mega_Mike\Desktop\layout-main\design.py
+Pyrcc5 C:\Users\Mega_Mike\Desktop\layout-main\file.qrc -o C:\Users\Mega_Mike\Desktop\layout-main\icons.py
