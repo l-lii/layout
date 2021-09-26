@@ -66,13 +66,19 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>40</width>
-            <height>13</height>
+            <height>15</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
          <widget class="QLabel" name="labelPort">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>15</height>
+           </size>
+          </property>
           <property name="font">
            <font>
             <pointsize>10</pointsize>
@@ -97,7 +103,7 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>40</width>
-            <height>13</height>
+            <height>15</height>
            </size>
           </property>
          </spacer>

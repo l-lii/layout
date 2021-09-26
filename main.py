@@ -1,15 +1,17 @@
+from PyQt5 import QtWidgets
+from design import Ui_MainWindow  # импорт нашего сгенерированного файла с именем label
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget
-
-
-if __name__ == '__main__':
-
-    app = QApplication(sys.argv)
-
-    w = QWidget()
-    w.resize(250, 150)
-    w.move(300, 300)
-    w.setWindowTitle('Simple')
-    w.show()
-
-    sys.exit(app.exec_())
+ 
+ 
+class mywindow(QtWidgets.QMainWindow):
+    def __init__(self):
+        super(mywindow, self).__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+ 
+ 
+app = QtWidgets.QApplication([])
+application = mywindow()
+application.show()
+ 
+sys.exit(app.exec())
