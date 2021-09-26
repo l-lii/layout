@@ -1,9 +1,5 @@
 <RCC>
-  <qresource prefix="customs">
-    <file>settings-gear.png</file>
-    <file>settings2.png</file>
-    <file>settings.png</file>
-    <file>settings.png</file>
-    <file>customButton.png</file>
+  <qresource prefix="images">
+    <file>images/settings-gear.png</file>
   </qresource>
 </RCC>
