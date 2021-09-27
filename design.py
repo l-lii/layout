@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Mega_Mike\Desktop\layout-main\design.ui'
+# Form implementation generated from reading ui file 'C:\Users\2065-3-1-32-8\Desktop\layout-main\design.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -11,19 +11,19 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(378, 458)
+class Ui_Weights(object):
+    def setupUi(self, Weights):
+        Weights.setObjectName("Weights")
+        Weights.resize(378, 458)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
-        MainWindow.setSizePolicy(sizePolicy)
-        MainWindow.setMinimumSize(QtCore.QSize(378, 458))
-        MainWindow.setMaximumSize(QtCore.QSize(378, 458))
-        MainWindow.setStyleSheet("background-color: rgb(170, 170, 255);")
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        sizePolicy.setHeightForWidth(Weights.sizePolicy().hasHeightForWidth())
+        Weights.setSizePolicy(sizePolicy)
+        Weights.setMinimumSize(QtCore.QSize(378, 458))
+        Weights.setMaximumSize(QtCore.QSize(378, 458))
+        Weights.setStyleSheet("background-color: rgb(170, 170, 255);")
+        self.centralwidget = QtWidgets.QWidget(Weights)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -36,26 +36,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
-        self.horizontalLayoutsPorts = QtWidgets.QHBoxLayout()
-        self.horizontalLayoutsPorts.setObjectName("horizontalLayoutsPorts")
-        spacerItem = QtWidgets.QSpacerItem(40, 15, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayoutsPorts.addItem(spacerItem)
-        self.labelPort = QtWidgets.QLabel(self.centralwidget)
-        self.labelPort.setMaximumSize(QtCore.QSize(40, 15))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setWeight(75)
-        font.setStrikeOut(False)
-        font.setKerning(True)
-        self.labelPort.setFont(font)
-        self.labelPort.setObjectName("labelPort")
-        self.horizontalLayoutsPorts.addWidget(self.labelPort)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 15, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayoutsPorts.addItem(spacerItem1)
-        self.verticalLayout.addLayout(self.horizontalLayoutsPorts)
         self.horizontalLayoutPortsMain = QtWidgets.QHBoxLayout()
         self.horizontalLayoutPortsMain.setObjectName("horizontalLayoutPortsMain")
         self.settingsButton = QtWidgets.QPushButton(self.centralwidget)
@@ -67,18 +47,31 @@ class Ui_MainWindow(object):
         self.settingsButton.setMinimumSize(QtCore.QSize(10, 20))
         self.settingsButton.setMaximumSize(QtCore.QSize(25, 25))
         self.settingsButton.setBaseSize(QtCore.QSize(20, 20))
-        self.settingsButton.setStyleSheet("image: url(:/images/images/settings-gear.png);")
+        self.settingsButton.setStyleSheet("image: url(:/images/images/settings.png);")
         self.settingsButton.setText("")
         self.settingsButton.setObjectName("settingsButton")
         self.horizontalLayoutPortsMain.addWidget(self.settingsButton)
+        self.labelPort = QtWidgets.QLabel(self.centralwidget)
+        self.labelPort.setMaximumSize(QtCore.QSize(40, 20))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        font.setKerning(True)
+        self.labelPort.setFont(font)
+        self.labelPort.setObjectName("labelPort")
+        self.horizontalLayoutPortsMain.addWidget(self.labelPort)
         self.selectionWindow = QtWidgets.QComboBox(self.centralwidget)
         self.selectionWindow.setObjectName("selectionWindow")
         self.horizontalLayoutPortsMain.addWidget(self.selectionWindow)
         self.connectButton = QtWidgets.QPushButton(self.centralwidget)
         self.connectButton.setMaximumSize(QtCore.QSize(100, 16777215))
         font = QtGui.QFont()
-        font.setBold(False)
-        font.setWeight(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.connectButton.setFont(font)
         self.connectButton.setObjectName("connectButton")
         self.horizontalLayoutPortsMain.addWidget(self.connectButton)
@@ -91,29 +84,38 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.horizontalLayoutScrollArea.sizePolicy().hasHeightForWidth())
         self.horizontalLayoutScrollArea.setSizePolicy(sizePolicy)
-        self.horizontalLayoutScrollArea.setMinimumSize(QtCore.QSize(320, 140))
+        self.horizontalLayoutScrollArea.setMinimumSize(QtCore.QSize(320, 200))
         self.horizontalLayoutScrollArea.setMaximumSize(QtCore.QSize(370, 200))
         self.horizontalLayoutScrollArea.setWidgetResizable(True)
         self.horizontalLayoutScrollArea.setObjectName("horizontalLayoutScrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 354, 138))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 354, 198))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Ignored)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.scrollAreaWidgetContents.sizePolicy().hasHeightForWidth())
         self.scrollAreaWidgetContents.setSizePolicy(sizePolicy)
         self.scrollAreaWidgetContents.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.scrollAreaWidgetContents.setStyleSheet("background-color: rgb(244, 244, 244);")
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.scrollAreaWidgetContents)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem2)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
         self.verticalScrollBar = QtWidgets.QScrollBar(self.scrollAreaWidgetContents)
+        self.verticalScrollBar.setStyleSheet("background-color: rgb(188, 188, 188);")
         self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
         self.verticalScrollBar.setObjectName("verticalScrollBar")
         self.horizontalLayout_2.addWidget(self.verticalScrollBar)
         self.horizontalLayoutScrollArea.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayoutMain.addWidget(self.horizontalLayoutScrollArea)
+        self.cleanButton = QtWidgets.QPushButton(self.centralwidget)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.cleanButton.setFont(font)
+        self.cleanButton.setObjectName("cleanButton")
+        self.verticalLayoutMain.addWidget(self.cleanButton)
         self.buttons = QtWidgets.QGridLayout()
         self.buttons.setObjectName("buttons")
         self.weighButton = QtWidgets.QPushButton(self.centralwidget)
@@ -125,56 +127,38 @@ class Ui_MainWindow(object):
         self.weighButton.setMinimumSize(QtCore.QSize(150, 70))
         self.weighButton.setBaseSize(QtCore.QSize(150, 50))
         font = QtGui.QFont()
-        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
         self.weighButton.setFont(font)
         self.weighButton.setStyleSheet("QPushButton{\n"
-"  color: black;                     \n"
-"  width: 50px;                     \n"
-"  height: 10px;                    \n"
-"  font-size: 14px;                 \n"
-"  font-weight: bold;        \n"
-"  border-raduis:10px;                    \n"
-"  text-align: center;\n"
+"image: url(:/images/images/weight.png);\n"
 "}")
+        self.weighButton.setText("")
         self.weighButton.setIconSize(QtCore.QSize(150, 50))
         self.weighButton.setObjectName("weighButton")
         self.buttons.addWidget(self.weighButton, 0, 0, 1, 1)
         self.calibButton = QtWidgets.QPushButton(self.centralwidget)
         self.calibButton.setMinimumSize(QtCore.QSize(150, 70))
         self.calibButton.setStyleSheet("QPushButton{\n"
-"  color: black;                     \n"
-"  width: 75px;                     \n"
-"  height: 50px;                    \n"
-"  font-size: 14px;                 \n"
-"  font-weight: bold;                             \n"
-"  text-align: center;\n"
+"image: url(:/images/images/calib.png);\n"
 "}")
+        self.calibButton.setText("")
         self.calibButton.setObjectName("calibButton")
         self.buttons.addWidget(self.calibButton, 0, 1, 1, 1)
         self.scanButton = QtWidgets.QPushButton(self.centralwidget)
         self.scanButton.setMinimumSize(QtCore.QSize(150, 70))
         self.scanButton.setStyleSheet("QPushButton{\n"
-"  color: black;                     \n"
-"  width: 75px;                     \n"
-"  height: 50px;                    \n"
-"  font-size: 14px;                 \n"
-"  font-weight: bold;                         \n"
-"  text-align: center;\n"
+"image: url(:/images/images/scan.png);\n"
 "}")
+        self.scanButton.setText("")
         self.scanButton.setObjectName("scanButton")
         self.buttons.addWidget(self.scanButton, 2, 1, 1, 1)
         self.saveButton = QtWidgets.QPushButton(self.centralwidget)
         self.saveButton.setMinimumSize(QtCore.QSize(150, 70))
         self.saveButton.setStyleSheet("QPushButton{\n"
-"  color: black;                     \n"
-"  width: 75px;                     \n"
-"  height: 50px;                    \n"
-"  font-size: 14px;                 \n"
-"  font-weight: bold;                                  \n"
-"  text-align: center;\n"
+"image: url(:/images/images/save.png);\n"
 "}")
+        self.saveButton.setText("")
         self.saveButton.setObjectName("saveButton")
         self.buttons.addWidget(self.saveButton, 2, 0, 1, 1)
         self.verticalLayoutMain.addLayout(self.buttons)
@@ -193,27 +177,24 @@ class Ui_MainWindow(object):
         self.horizontalLayoutWorkStatus.addWidget(self.lineEditWorkStatus)
         self.verticalLayout.addLayout(self.horizontalLayoutWorkStatus)
         self.horizontalLayout_3.addLayout(self.verticalLayout)
-        MainWindow.setCentralWidget(self.centralwidget)
+        Weights.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        MainWindow.setTabOrder(self.settingsButton, self.selectionWindow)
-        MainWindow.setTabOrder(self.selectionWindow, self.connectButton)
-        MainWindow.setTabOrder(self.connectButton, self.horizontalLayoutScrollArea)
-        MainWindow.setTabOrder(self.horizontalLayoutScrollArea, self.weighButton)
-        MainWindow.setTabOrder(self.weighButton, self.calibButton)
-        MainWindow.setTabOrder(self.calibButton, self.saveButton)
-        MainWindow.setTabOrder(self.saveButton, self.scanButton)
-        MainWindow.setTabOrder(self.scanButton, self.lineEditWorkStatus)
+        self.retranslateUi(Weights)
+        QtCore.QMetaObject.connectSlotsByName(Weights)
+        Weights.setTabOrder(self.settingsButton, self.selectionWindow)
+        Weights.setTabOrder(self.selectionWindow, self.connectButton)
+        Weights.setTabOrder(self.connectButton, self.horizontalLayoutScrollArea)
+        Weights.setTabOrder(self.horizontalLayoutScrollArea, self.weighButton)
+        Weights.setTabOrder(self.weighButton, self.calibButton)
+        Weights.setTabOrder(self.calibButton, self.saveButton)
+        Weights.setTabOrder(self.saveButton, self.scanButton)
+        Weights.setTabOrder(self.scanButton, self.lineEditWorkStatus)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Weights):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.labelPort.setText(_translate("MainWindow", "Порт"))
-        self.connectButton.setText(_translate("MainWindow", "Подключиться"))
-        self.weighButton.setText(_translate("MainWindow", "Взвешивание"))
-        self.calibButton.setText(_translate("MainWindow", "Калибровка"))
-        self.scanButton.setText(_translate("MainWindow", "Сканер"))
-        self.saveButton.setText(_translate("MainWindow", "Сохранение"))
-        self.labelWorkStatus.setText(_translate("MainWindow", "Статус работы"))
+        Weights.setWindowTitle(_translate("Weights", "MainWindow"))
+        self.labelPort.setText(_translate("Weights", "Порт"))
+        self.connectButton.setText(_translate("Weights", "Подключить"))
+        self.cleanButton.setText(_translate("Weights", "Очистить"))
+        self.labelWorkStatus.setText(_translate("Weights", "Статус работы"))
 import icons
