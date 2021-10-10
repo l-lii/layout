@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\2065-3-1-32-8\Desktop\layout-main\design.ui'
+# Form implementation generated from reading ui file 'C:\Users\Mega_Mike\Desktop\layout-main\design.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -174,9 +174,9 @@ class Ui_Weights(object):
         self.labelWorkStatus.setFont(font)
         self.labelWorkStatus.setObjectName("labelWorkStatus")
         self.horizontalLayoutWorkStatus.addWidget(self.labelWorkStatus)
-        self.labelEditWorkStatus = QtWidgets.QLabel(self.centralwidget)
-        self.labelEditWorkStatus.setObjectName("labelEditWorkStatus")
-        self.horizontalLayoutWorkStatus.addWidget(self.labelEditWorkStatus)
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setObjectName("label")
+        self.horizontalLayoutWorkStatus.addWidget(self.label)
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayoutWorkStatus.addItem(spacerItem1)
         self.verticalLayout.addLayout(self.horizontalLayoutWorkStatus)
@@ -192,7 +192,7 @@ class Ui_Weights(object):
         Weights.setTabOrder(self.weighButton, self.calibButton)
         Weights.setTabOrder(self.calibButton, self.saveButton)
         Weights.setTabOrder(self.saveButton, self.scanButton)
-        Weights.setTabOrder(self.scanButton, self.labelEditWorkStatus)
+
         QToolTip.setFont(QFont('SansSerif', 10))
 
         # подсказки при наведении на кнопки
@@ -202,19 +202,17 @@ class Ui_Weights(object):
         self.scanButton.setToolTip('Сканирование')
         self.settingsButton.setToolTip('Настройки')
 
-
-
     def retranslateUi(self, Weights):
         _translate = QtCore.QCoreApplication.translate
         Weights.setWindowTitle(_translate("Weights", "MainWindow"))
         self.labelPort.setText(_translate("Weights", "Порт"))
         self.connectButton.setText(_translate("Weights", "Подключить"))
         self.cleanButton.setText(_translate("Weights", "Очистить"))
-        self.labelWorkStatus.setText(_translate("Weights", "Статус работы:   "))
+        self.labelWorkStatus.setText(_translate("Weights", "Статус работы: "))
 
         # меняем статус работы
-        text = 'статус'
-        self.labelEditWorkStatus.setText(_translate("Weights", text))
-        self.labelEditWorkStatus.setWordWrap(True)
+        text = 'статус '
+        self.lineEditWorkStatus.setText(_translate("Weights", text))
+        self.lineEditWorkStatus.setWordWrap(True)
 
 import icons

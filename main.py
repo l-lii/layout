@@ -1,6 +1,9 @@
-from PyQt5 import QtWidgets
-from design import Ui_Weights  # импорт нашего сгенерированного файла с именем label
 import sys
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtGui import QIcon
+
+from design import Ui_Weights  # импорт нашего сгенерированного файла
 
 
 class mywindow(QtWidgets.QMainWindow):
@@ -8,9 +11,15 @@ class mywindow(QtWidgets.QMainWindow):
         super(mywindow, self).__init__()
         self.ui = Ui_Weights()
         self.ui.setupUi(self)
+        self.setWindowTitle('Весы')     # название программы
+        self.setWindowIcon(QIcon('./images/icon.png'))      # иконка программы
 
-app = QtWidgets.QApplication([])
-application = mywindow()
-application.show()
+        self.show()
 
-sys.exit(app.exec())
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    application = mywindow()
+    application.show()
+
+    sys.exit(app.exec())

@@ -340,12 +340,29 @@ image: url(:/images/images/save.png);
            </font>
           </property>
           <property name="text">
-           <string>Статус работы</string>
+           <string>Статус работы: </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditWorkStatus"/>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>работает</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </item>
@@ -363,7 +380,6 @@ image: url(:/images/images/save.png);
   <tabstop>calibButton</tabstop>
   <tabstop>saveButton</tabstop>
   <tabstop>scanButton</tabstop>
-  <tabstop>lineEditWorkStatus</tabstop>
  </tabstops>
  <resources>
   <include location="file.qrc"/>
