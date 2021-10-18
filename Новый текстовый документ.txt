@@ -1,0 +1,25 @@
+        QToolTip.setFont(QFont('SansSerif', 10))
+
+        # подсказки при наведении на кнопки
+        self.weighButton.setToolTip('Взвешивание')
+        self.calibButton.setToolTip('Калибровка')
+        self.saveButton.setToolTip('Сохранение')
+        self.scanButton.setToolTip('Сканирование')
+        self.settingsButton.setToolTip('Настройки')
+
+
+
+    def retranslateUi(self, Weights):
+        _translate = QtCore.QCoreApplication.translate
+        Weights.setWindowTitle(_translate("Weights", "MainWindow"))
+        self.labelPort.setText(_translate("Weights", "Порт"))
+        self.connectButton.setText(_translate("Weights", "Подключить"))
+        self.cleanButton.setText(_translate("Weights", "Очистить"))
+        self.labelWorkStatus.setText(_translate("Weights", "Статус работы:   "))
+
+        # меняем статус работы
+        text = 'статус'
+        self.labelEditWorkStatus.setText(_translate("Weights", text))
+        self.labelEditWorkStatus.setWordWrap(True)
+
+import icons
