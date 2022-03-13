@@ -1,2 +1,15 @@
 pyuic5 C:\Users\2065-3-1-32-8\Desktop\layout-main\design.ui -o C:\Users\2065-3-1-32-8\Desktop\layout-main\design.py
 Pyrcc5 C:\Users\2065-3-1-32-8\Desktop\layout-main\file.qrc -o C:\Users\2065-3-1-32-8\Desktop\layout-main\icons.py
+
+
+копирование
+from PyQt5.QtWidgets import QApplication
+import sys
+
+def main():
+    app = QApplication(sys.argv)
+    cb = QApplication.clipboard()
+    cb.clear(mode=cb.Clipboard )
+    cb.setText("Copy to ClipBoard", mode=cb.Clipboard)
+    # Text is now already in the clipboard, no need for further actions.
+    sys.exit()
